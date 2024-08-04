@@ -1,4 +1,4 @@
-pipeline{
+pipeline{gf
     agent any
     
     stages{
