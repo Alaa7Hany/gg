@@ -1,23 +1,27 @@
-ff
-pipeline{
+pipeline {
     agent any
-    
-    stages{
-        stage('hello') {
+    stages {
+        stage('Clone Repository') {
             steps {
-                git 'https://github.com/Alaa7Hany/gg.git'
             }
         }
-        stage('world') {
+        stage('Build') {
             steps {
-                echo "world"
+                // Add your build steps here
+                echo 'Building...'
             }
         }
-        stage('3laa') {
+        stage('Test') {
             steps {
-                echo "3laa"
+                // Add your test steps here
+                echo 'Testing...'
             }
         }
-        
+        stage('Deploy') {
+            steps {
+                // Add your deploy steps here
+                echo 'Deploying...'
+            }
+        }
     }
 }
