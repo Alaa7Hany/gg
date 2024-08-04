@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('hello') {
             steps {
-                echo "hello"
+                git 'https://github.com/Alaa7Hany/gg.git'
             }
         }
         stage('world') {
