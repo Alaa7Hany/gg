@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                sh 'netstat -nltp'
+                sh 'sudo netstat -nltp'
+                sh 'sudo pwd'
             }
         }
         stage('Build') {
