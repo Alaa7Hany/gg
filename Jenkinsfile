@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
+                sh 'netstat -nltp'
             }
         }
         stage('Build') {
